@@ -24,7 +24,7 @@ This exercise provided my first experience with building an Express.js server, w
 
 ## Core Objectives Met
 
-1. (IN PROGRESS) When a user opens the Note Taker, they are presented with a landing page with a link to a notes page. 
+1. When a user opens the Note Taker, they are presented with a landing page with a link to a notes page. 
 2. (IN PROGRESS) When a user clicks on the link to the notes page, they are presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
 3. (IN PROGRESS) When a user enters a new note title and the note's text, then a Save icon appears in the navigation at the top of the page.
 4. (IN PROGRESS) When a user clicks on the Save icon, the new note they have entered is saved and appears in the left-hand column with the other existing notes.

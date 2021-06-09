@@ -1,3 +1,8 @@
+const fs = require('fs');
+
+* `POST /api/notes` should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client. You'll need to find a way to give each note a unique id when it's saved (look into `npm` packages that could do this for you).
+
+
 let noteTitle;
 let noteText;
 let saveNoteBtn;
@@ -25,6 +30,8 @@ const hide = (elem) => {
 // activeNote is used to keep track of the note in the textarea
 let activeNote = {};
 
+// * `GET /notes` should return the `notes.html` file.
+// * `GET /api/notes` should read the `db.json` file and return all saved notes as JSON.
 const getNotes = () =>
   fetch('/api/notes', {
     method: 'GET',
@@ -32,6 +39,8 @@ const getNotes = () =>
       'Content-Type': 'application/json',
     },
   });
+
+  * `GET *` should return the `index.html` file.
 
 const saveNote = (note) =>
   fetch('/api/notes', {
