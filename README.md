@@ -32,13 +32,16 @@ This exercise provided my first experience with building an Express.js server, w
 6. (IN PROGRESS) When a user clicks on the Write icon in the navication at the top of the page, then they are presented with empty fields to enter a new note title and the note’s text in the right-hand column. 
 
 ## Technologies Used
-<!-- - JavaScript
+- JavaScript
 - Node.js
-- Shields.io
-- Jestjs.io
-- [NPM Inquirer Package](https://www.npmjs.com/package/inquirer)
+<!-- - Shields.io
+- Jestjs.io -->
+<!-- - [NPM Inquirer Package](https://www.npmjs.com/package/inquirer) -->
+- [NPM Express.js Package](https://www.npmjs.com/package/express)
 - [NPM FS Package](https://www.npmjs.com/package/fs)
-- [NPM Colors Package](https://www.npmjs.com/package/colors) -->
+- [NPM Path Package](https://www.npmjs.com/package/path)
+- [NPM UUID Package](https://www.npmjs.com/package/uuid)
+<!-- - [NPM Colors Package](https://www.npmjs.com/package/colors) -->
 
 ## Installation
 

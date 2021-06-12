@@ -2,14 +2,16 @@
 
 // DEPENDENCIES
 const notesData = require('../db/db.json');
-const {v4 : uuidv4} = require('uuid');
 
 // ROUTING
 module.exports = (app) => {
   app.get('/api/notes', (req, res) => res.json(notesData));
   app.post('/api/notes', (req, res) => {
-    const {title, text} = req.body
-    const noteId = uuidv4()
-    notesData.push({noteID, title, text}); return(notesData);
+    const {title, text} = req.body;
+    notesData.push({noteID, title, text}); res.json(req.body);
   })
+  // app.delete('/api/notes/:id', (req, res) => {
+
+  //   res.json();
+  // })
 };
