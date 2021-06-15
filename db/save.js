@@ -5,13 +5,15 @@ const readFileAsynch = util.promisify(fs.readfile);
 const writeFileAsynch = util.promisify(fs.writefile);
 
 class Save {
+    //Function to return the whole file from db.json
     read() {
         return readFileAsynch('db/db.json', 'utf8');
     };
+    //Function to stringify the new note for writing to the db
     write(note) {
         return writeFileAsynch('db/db.json', json.stringify(note));
     };
-   //.then(notes) returns the read response (the db.json file containing all the notes)
+   //Function to get the notes returned from the db, then concatinate and parse them in an array
     getNotes() {
         return this.read().then((notes) => {
             let parsedNotes;
