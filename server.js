@@ -1,5 +1,7 @@
 // DEPENDENCIES
 const express = require('express');
+const apiRoutes = require('./routes/apiRoutes')
+const htmlRoutes = require('./routes/htmlRoutes')
 
 const app = express();
 
@@ -11,8 +13,8 @@ app.use(express.json());
 app.use(express.static('public'))
 
 // ROUTER
-require('./routes/apiRoutes')(app);
-require('./routes/htmlRoutes')(app);
+app.use('/api', apiRoutes)
+app.use('/api', htmlRoutes)
 
 // LISTENER
 app.listen(PORT, () => {

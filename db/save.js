@@ -11,14 +11,14 @@ class Save {
     };
     //Function to stringify the new note for writing to the db
     write(note) {
-        return writeFileAsynch('db/db.json', json.stringify(note));
+        return writeFileAsynch('db/db.json', JSON.stringify(note));
     };
    //Function to get the notes returned from the db, then concatinate and parse them in an array
     getNotes() {
         return this.read().then((notes) => {
             let parsedNotes;
             try {
-                parsedNotes = [].concat(json.parse(notes));
+                parsedNotes = [].concat(JSON.parse(notes));
             } catch (err) {
                 parsedNotes = [];
             }
