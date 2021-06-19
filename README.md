@@ -15,11 +15,10 @@ This exercise provided my first experience with building an Express.js server, w
 ## Table of Contents
 - [Core Objectives Met](#Core)
 - [Technologies Used](#Technologies)
-- [Installation](#Installation)
-- [Usage](#Usage)
+- [Local Installation & Usage](#Local)
+- [Deployed App](#Deployed)
+- [Demo](#Demo)
 - [License](#MIT)
-- [Contributing](#Contributing)
-- [Tests](#Tests)
 - [Questions](#Questions)
 
 ## Core Objectives Met
@@ -54,18 +53,11 @@ This exercise provided my first experience with building an Express.js server, w
 ## Deployed App
 This Note Taker app has been deployed on Heroku and is available at [https://cailin-note-taker.herokuapp.com/](https://cailin-note-taker.herokuapp.com/).
 
-## Screenshots and Demo Videos 
+## Demo 
 
-<!-- [VIDEO LINK | Full Application Demonstration](https://youtu.be/kuflGg4qf1A)  <br /> 
-DESCRIPTION: *Running tests, then creating a My-Team HTML file by following the in-terminal prompts. Verifying that the My-Team file is created and meets project requirements.*
+DEMO | *Demo live app*
 
-SCREENSHOT | *Demo console*
-
-![My-Team Console screenshot.](./images/My_Team_Console_Screenshot.PNG)
-
-SCREENSHOT | *Demo My Team HTML file* 
-
-![My-Team.html output screenshot.](./images/My_Team_HTML_Screenshot.png) -->
+![Note Taker demo.](./Note_Taker_Demo.gif)
 
 ## MIT License
 &copy;2021 Cailin Bell Wold
