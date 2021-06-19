@@ -1,19 +1,24 @@
+// DEPENDENCIES
 const util = require('util');
 const fs = require('fs');
 const {v4 : uuidv4} = require('uuid');
 const readFileAsynch = util.promisify(fs.readFile);
 const writeFileAsynch = util.promisify(fs.writeFile);
 
+// FUNCTIONS
 class Save {
-    //Function to return the whole file from db.json
+
+    // Return the file from db.json
     read() {
         return readFileAsynch('db/db.json', 'utf8');
     };
-    //Function to stringify the new note for writing to the db
+
+    // Stringify the new note for writing to the db
     write(note) {
         return writeFileAsynch('db/db.json', JSON.stringify(note));
     };
-   //Function to get the notes returned from the db, then concatinate and parse them in an array
+
+   // Retrieve the notes returned from the db, then concatinate and parse them in an array (creating a new array, if none exists)
     getNotes() {
         return this.read().then((notes) => {
             let parsedNotes;
@@ -25,6 +30,8 @@ class Save {
             return parsedNotes;
         })
     };
+
+    // Create a new note and include a UUID
     addNote(note) {  
         const {title, text} = note;
         if (!title || !text) {
@@ -37,9 +44,14 @@ class Save {
             .then(() => newNote);
         }
     };
+
+    // Delete a new note, referencing its UUID
     removeNote(id) {
         return this.getNotes()
         .then((parsedNotes) => parsedNotes.filter((note) => note.id !== id))
         .then((filteredParsedNotes) => this.write(filteredParsedNotes));
     };
-}   module.exports = new Save();
+};
+
+// EXPORT
+module.exports = new Save();

@@ -41,19 +41,15 @@ This exercise provided my first experience with building an Express.js server, w
 - [NPM Util Package](https://www.npmjs.com/package/util)
 - [NPM UUID Package](https://www.npmjs.com/package/uuid)
 
-## Installation
+## Local Installation & Usage
 
 1. Clone this Note-Taker repo to your machine.
 2. Open the repo in your terminal.
 3. Run ```npm init```
 4. Run ```npm install```
-
-## Local Usage
-
-1. Open Note-Taker (now stored on your machine) in your terminal.
-2. Run ``` node server ```
-2. Open [http://localhost:3000](http://localhost:3000) in the modern browser of your choice.
-3. Your My-Team.html file will write to the output folder. 
+5. Open Note-Taker (now stored on your machine) in your terminal.
+6. Run ``` node server ```
+7. Open [http://localhost:3000](http://localhost:3000) in the modern browser of your choice.
 
 ## Deployed App
 This Note Taker app has been deployed on Heroku and is available at [https://cailin-note-taker.herokuapp.com/](https://cailin-note-taker.herokuapp.com/).
@@ -62,7 +58,6 @@ This Note Taker app has been deployed on Heroku and is available at [https://cai
 
 <!-- [VIDEO LINK | Full Application Demonstration](https://youtu.be/kuflGg4qf1A)  <br /> 
 DESCRIPTION: *Running tests, then creating a My-Team HTML file by following the in-terminal prompts. Verifying that the My-Team file is created and meets project requirements.*
-
 
 SCREENSHOT | *Demo console*
 
@@ -95,3 +90,5 @@ SOFTWARE.
 
 ## Questions
 For inquiries, please contact [Cailin Bell Wold](https://github.com/CailinBellWold).
+
+Special thanks to my tutor, [Armando Osorio](https://github.com/mandoosorio), for guidance on this project.
