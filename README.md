@@ -28,34 +28,35 @@ This exercise provided my first experience with building an Express.js server, w
 2. When a user clicks on the link to the notes page, they are presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
 3. When a user enters a new note title and the note's text, then a Save icon appears in the navigation at the top of the page.
 4. When a user clicks on the Save icon, the new note they have entered is saved and appears in the left-hand column with the other existing notes.
-5. (IN PROGRESS) When a user clicks on an existing note in the list in the left-hand column, that note appears in the right-hand column.
-6. (IN PROGRESS) When a user clicks on the Write icon in the navication at the top of the page, then they are presented with empty fields to enter a new note title and the note’s text in the right-hand column. 
+5. When a user clicks on an existing note in the list in the left-hand column, that note appears in the right-hand column.
+6. When a user clicks on the Write icon in the navication at the top of the page, then they are presented with empty fields to enter a new note title and the note’s text in the right-hand column. 
 
 ## Technologies Used
 - JavaScript
 - Node.js
-<!-- - Shields.io
-- Jestjs.io -->
-<!-- - [NPM Inquirer Package](https://www.npmjs.com/package/inquirer) -->
 - [NPM Express.js Package](https://www.npmjs.com/package/express)
 - [NPM FS Package](https://www.npmjs.com/package/fs)
 - [NPM Path Package](https://www.npmjs.com/package/path)
+- [NPM Router Package](https://www.npmjs.com/package/router)
+- [NPM Util Package](https://www.npmjs.com/package/util)
 - [NPM UUID Package](https://www.npmjs.com/package/uuid)
-<!-- - [NPM Colors Package](https://www.npmjs.com/package/colors) -->
 
 ## Installation
 
-<!-- 1. Clone this Team-Profile-Generator repo to your machine.
+1. Clone this Note-Taker repo to your machine.
 2. Open the repo in your terminal.
 3. Run ```npm init```
-4. Run ```npm install``` -->
+4. Run ```npm install```
 
-## Usage
+## Local Usage
 
-<!-- 1. Open Team-Profile-Generator (now stored on your machine) in your terminal.
-2. Run ``` node index.js ```
-2. You will be prompted to answer questions about your team. Answer each question.
-3. Your My-Team.html file will write to the output folder.  -->
+1. Open Note-Taker (now stored on your machine) in your terminal.
+2. Run ``` node server ```
+2. Open [http://localhost:3000](http://localhost:3000) in the modern browser of your choice.
+3. Your My-Team.html file will write to the output folder. 
+
+## Deployed App
+This Note Taker app has been deployed on Heroku and is available at [https://cailin-note-taker.herokuapp.com/](https://cailin-note-taker.herokuapp.com/).
 
 ## Screenshots and Demo Videos 
 
