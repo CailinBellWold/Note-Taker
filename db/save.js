@@ -1,8 +1,8 @@
 const util = require('util');
 const fs = require('fs');
 const {v4 : uuidv4} = require('uuid');
-const readFileAsynch = util.promisify(fs.readfile);
-const writeFileAsynch = util.promisify(fs.writefile);
+const readFileAsynch = util.promisify(fs.readFile);
+const writeFileAsynch = util.promisify(fs.writeFile);
 
 class Save {
     //Function to return the whole file from db.json

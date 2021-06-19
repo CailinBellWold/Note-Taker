@@ -1,6 +1,6 @@
 // DEPENDENCIES
 const path = require('path');
-const router = requre('express').Router();
+const router = require('express').Router();
 
 // ROUTING
   router.get('/notes', (req, res) => {
